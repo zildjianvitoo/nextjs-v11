@@ -26,7 +26,7 @@ export async function getStaticProps() {
 
   return {
     props: {
-      posts: resJson.slice(0, 5),
+      posts: resJson,
     },
   };
 }
