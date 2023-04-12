@@ -37,16 +37,16 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const resJson = await res.json();
+  // const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+  // const resJson = await res.json();
 
-  const paths = resJson.map((post) => {
-    return {
-      params: {
-        postId: `${post.id}`,
-      },
-    };
-  });
+  // const paths = resJson.map((post) => {
+  //   return {
+  //     params: {
+  //       postId: `${post.id}`,
+  //     },
+  //   };
+  // });
 
   return {
     paths: [
