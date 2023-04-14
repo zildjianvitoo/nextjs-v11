@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function NewsList({ data }) {
   return (
     <>
@@ -9,7 +11,9 @@ export default function NewsList({ data }) {
               <h3>
                 {news.id} {news.title}
               </h3>
-              <p>Category: {news.category}</p>
+              <Link href={`/news/${news.category}`}>
+                <p>Category: {news.category}</p>
+              </Link>
             </li>
           );
         })}
