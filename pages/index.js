@@ -17,7 +17,7 @@ export default function HomePage() {
     <>
       <h1>HomePage Next Js Pre rendering</h1>
       <h3>
-        <Link href="/product">Go to product page</Link>
+        <Link href="/products">Go to products page</Link>
       </h3>
       <h3>
         <Link href="/users">Go to UserList Page</Link>
